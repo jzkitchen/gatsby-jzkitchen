@@ -86,7 +86,7 @@ const Post = ({ data, pageContext }) => {
           </section>
           {Image ? (
             <Img 
-              fluid={Image} 
+              fixed={Image} 
               objectFit="cover"
               objectPosition="50% 50%"
               alt={frontmatter.title + ' - Featured image'}
@@ -125,9 +125,8 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1200, maxHeight: 768, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
-              ...GatsbyImageSharpFluid
-              ...GatsbyImageSharpFluidLimitPresentationSize
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed_withWebp
             }
             sizes {
               src
