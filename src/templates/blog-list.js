@@ -43,6 +43,7 @@ export const blogListQuery = graphql`
 								fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
                   ...GatsbyImageSharpFluid
                   ...GatsbyImageSharpFluidLimitPresentationSize
+                  ...GatsbyImageSharpFluid_withWebp
                 }
 							}
 						}
