@@ -124,9 +124,10 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 1200, maxHeight: 675, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
+            fluid(maxWidth: 1980, maxHeight: 768, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
               ...GatsbyImageSharpFluid
               ...GatsbyImageSharpFluidLimitPresentationSize
+              ...GatsbyImageSharpFluid_withWebp
             }
             sizes {
               src
