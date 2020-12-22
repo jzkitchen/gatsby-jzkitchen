@@ -40,7 +40,7 @@ export const blogListQuery = graphql`
 						title
 						featuredImage {
 							childImageSharp {
-								fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
+								fluid(maxWidth: 1200, maxHeight: 675, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
                   ...GatsbyImageSharpFluid
                   ...GatsbyImageSharpFluidLimitPresentationSize
                   ...GatsbyImageSharpFluid_withWebp
