@@ -40,11 +40,11 @@ export const blogListQuery = graphql`
 						title
 						featuredImage {
 							childImageSharp {
-								fluid(maxWidth: 1200, maxHeight: 675, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
-                  ...GatsbyImageSharpFluid
-                  ...GatsbyImageSharpFluidLimitPresentationSize
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+								fluid(sizes: “(max-width: 992px) 33vw, (max-width: 576px) 50vw, calc(100vw - 40px)”, quality: 80, srcSetBreakpoints: [320, 400, 480, 560]) {
+								  ...GatsbyImageSharpFluid
+								  ...GatsbyImageSharpFluidLimitPresentationSize
+								  ...GatsbyImageSharpFluid_withWebp
+                						}
 							}
 						}
           }
