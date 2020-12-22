@@ -46,6 +46,7 @@ module.exports = {
               linkImagesToOriginal: false,
               tracedSVG: true,
               loading: "lazy",
+              withWebp: true,
             },
           },
           `gatsby-remark-responsive-iframe`,
