@@ -35,6 +35,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         gfm: true,
+        "excerpt_separator": `<!--more-->`,
         plugins: [
           netlifyCmsPaths,
           `gatsby-remark-reading-time`,
