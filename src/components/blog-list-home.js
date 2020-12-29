@@ -46,6 +46,7 @@ export default function BlogListHome() {
                       fluid(maxWidth: 540, maxHeight: 304, quality: 80, srcSetBreakpoints: [320, 400, 480, 560, 640, 720, 800, 960, 1024, 1200]) {
                         ...GatsbyImageSharpFluid
                         ...GatsbyImageSharpFluidLimitPresentationSize
+                        ...GatsbyImageSharpFluid_withWebp
                       }
                     }
                   }
